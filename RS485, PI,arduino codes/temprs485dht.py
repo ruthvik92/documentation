@@ -1,4 +1,4 @@
-#code to send data to arduino over rs485 and receive back
+####code to send data to arduino over rs485 and receive back
 import serial
 import sqlite3
 import RPi.GPIO as GPIO
