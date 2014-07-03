@@ -1,4 +1,4 @@
-"""#parsing the MAC address from the API frames received from XBee module"""
+"""#parsing the MAC address from the API frames received from XBee module and compare it to a address"""
 import serial
 import sqlite3
 import RPi.GPIO as GPIO
