@@ -1,7 +1,7 @@
 """#forming a sample MAC address from the API frames received from XBee module"""
-a=['0x13','0xa2','0x0','0x40','0xbc','0xdb','0x9a']#sample frames to be contained in received data
+a=['0x13','0xa2','0x0','0x40','0xbc','0xdb','0x9a']#sample frames to be contained in received data this is the address of source
 add=[]
-address= ( int(0x13a20040bcdb9a))
+address= ( int(0x13a20040bcdb9a)) #give a sample address to compare with the incoming address
 address=("%x" % address) #remove '0x' from beginning and L at end
 print address
 a=[int(x,16) for x in a] #convert the sample frame data to integer
@@ -9,7 +9,7 @@ add.append((a[5]<<8)|a[6])#combine '0xdb' and '0x9a' to form 'oxdb9a'
 p=4
 q=16
 r=0
-for i in range(0,5):      #perform appending using loop
+for i in range(0,5):#perform appending using loop all the we are forming a address here using the bytes corresponding to address in incoming API frames.
     add.append((a[p]<<q)|add[r])
     p=p-1
     q=q+8
