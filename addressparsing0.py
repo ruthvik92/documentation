@@ -11,15 +11,15 @@ p=4
 q=16
 r=0
 for i in range(0,5):
-    print i
-    print q
+    #print i
+    #print q
     add.append((a[p]<<q)|add[r])
-    p=p-1
-    print p
-    q=q+8
-    print q
-    r=r+1
-    print r
+    #p=p-1
+    #print p
+    #q=q+8
+    #print q
+    #r=r+1
+    #print r
 a=str("%x" % add[-1])
 print a
 if address==a:
